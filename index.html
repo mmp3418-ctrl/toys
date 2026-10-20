@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Minxin Toys — Professional B2B trading company for toys & sports equipment. OEM, custom designs, private-label production. Exporting to Africa & Europe. Contact: info@minxin-toys.com" />
+  <meta name="description" content="Minxin Toys — Professional B2B trading & manufacturing company for toys & sports equipment. OEM, custom designs, private-label production, wholesale. Exporting to Africa & Europe. Contact: info@minxin-toys.com" />
   <meta name="theme-color" content="#1A1A1A" />
   <title>MINXIN TOYS — Premium B2B Toys & Sports Equipment Supplier</title>
 
@@ -68,15 +68,12 @@
     }
     .reveal.active { opacity: 1; transform: translateY(0); }
 
-    /* Mobile bottom bar space */
     @media (max-width: 1023px) {
       body { padding-bottom: 72px; }
     }
 
-    /* Prevent horizontal overflow */
     html, body { overflow-x: hidden; max-width: 100%; }
 
-    /* Product card image frame */
     .product-frame {
       position: relative;
       width: 100%;
@@ -130,14 +127,12 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 md:h-20 gap-3">
 
-        <!-- Brand (text only, no logo) -->
         <a href="#home" class="shrink-0">
           <span class="font-display font-extrabold text-lg md:text-xl tracking-tight whitespace-nowrap">
             MINXIN <span class="text-orange">TOYS</span>
           </span>
         </a>
 
-        <!-- Desktop Nav -->
         <nav class="hidden lg:flex items-center gap-1">
           <a href="#home" class="px-4 py-2 text-sm font-medium text-neutral-200 hover:text-orange hover:bg-charcoal-light rounded-lg transition" data-i18n="nav_home">Home</a>
           <a href="#about" class="px-4 py-2 text-sm font-medium text-neutral-200 hover:text-orange hover:bg-charcoal-light rounded-lg transition" data-i18n="nav_about">About Us</a>
@@ -145,22 +140,17 @@
           <a href="#contact" class="px-4 py-2 text-sm font-medium text-neutral-200 hover:text-orange hover:bg-charcoal-light rounded-lg transition" data-i18n="nav_contact">Contact Us</a>
         </nav>
 
-        <!-- Actions -->
         <div class="flex items-center gap-2 md:gap-3">
-
-          <!-- Search (desktop) -->
           <div class="hidden md:flex items-center bg-charcoal-light rounded-full px-3 py-2 border border-neutral-700 focus-within:border-orange transition w-40 lg:w-52">
             <i class="fas fa-search text-neutral-400 text-xs"></i>
             <input type="text" placeholder="Search..." class="bg-transparent border-none outline-none text-sm text-white placeholder-neutral-400 px-2 w-full" data-i18n-placeholder="search_placeholder" />
           </div>
 
-          <!-- Language -->
           <div class="flex items-center bg-charcoal-light rounded-full p-0.5 border border-neutral-700">
             <button id="lang-en" class="lang-btn px-2.5 md:px-3 py-1 text-xs font-bold rounded-full text-neutral-300 hover:text-white transition" onclick="setLanguage('en')">EN</button>
             <button id="lang-zh" class="lang-btn px-2.5 md:px-3 py-1 text-xs font-bold rounded-full text-neutral-300 hover:text-white transition" onclick="setLanguage('zh')">中文</button>
           </div>
 
-          <!-- Hamburger (mobile) -->
           <button id="menu-toggle" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-charcoal-light transition" aria-label="Menu">
             <i class="fas fa-bars text-lg"></i>
           </button>
@@ -240,7 +230,7 @@
         </h1>
 
         <p class="text-neutral-200 text-base md:text-lg mb-8 leading-relaxed max-w-2xl" data-i18n="hero_subtitle">
-          Professional trading company specializing in toys and sports equipment. Exporting to Africa and Europe. OEM &amp; third-party production available.
+          Professional trading & manufacturing company specializing in toys and sports equipment. Exporting to Africa and Europe. OEM, custom designs & wholesale available.
         </p>
 
         <div class="flex flex-wrap gap-3">
@@ -301,7 +291,7 @@
     </div>
   </section>
 
-  <!-- ===================== ABOUT (updated with OEM / Custom Manufacturing) ===================== -->
+  <!-- ===================== ABOUT (with Core Business + OEM) ===================== -->
   <section id="about" class="bg-white py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -331,7 +321,18 @@
             Minxin Toys is a professional trading company specializing in toys and sports equipment, as well as commissioning third-party production! Our products are exported to Africa and Europe, and are highly favored by customers. Our professional team serves you and welcomes inquiries!
           </p>
 
-          <!-- NEW: OEM & Custom Manufacturing paragraph -->
+          <!-- CORE BUSINESS -->
+          <div class="bg-neutral-50 border-l-4 border-neutral-900 rounded-r-xl p-4 md:p-5 mb-4">
+            <h3 class="font-display font-extrabold text-neutral-900 text-base md:text-lg mb-2 flex items-center gap-2">
+              <i class="fas fa-briefcase text-orange"></i>
+              <span data-i18n="about_core_title">Our Core Business</span>
+            </h3>
+            <p class="text-neutral-700 text-sm md:text-base leading-relaxed" data-i18n="about_core_text">
+              We manufacture all types of sports toys in-house, as well as through third-party contract manufacturing. We also wholesale our products and trade in all kinds of toys, sports equipment, and recreational goods — serving wholesalers, retailers, and brand owners worldwide.
+            </p>
+          </div>
+
+          <!-- OEM & CUSTOM MANUFACTURING -->
           <div class="bg-orange/5 border-l-4 border-orange rounded-r-xl p-4 md:p-5 mb-6">
             <h3 class="font-display font-extrabold text-neutral-900 text-base md:text-lg mb-2 flex items-center gap-2">
               <i class="fas fa-file-signature text-orange"></i>
@@ -371,7 +372,6 @@
                 <p class="text-xs text-neutral-500 mt-0.5" data-i18n="about_point_4d">Africa &amp; Europe</p>
               </div>
             </div>
-            <!-- NEW: Custom Designs & Contracts -->
             <div class="flex items-start gap-3 p-3.5 bg-orange/5 rounded-lg border border-orange/20 sm:col-span-2">
               <i class="fas fa-handshake text-orange mt-0.5 shrink-0"></i>
               <div class="min-w-0">
@@ -425,7 +425,6 @@
 
       <div class="grid md:grid-cols-3 gap-4 md:gap-5 max-w-6xl mx-auto">
 
-        <!-- Email -->
         <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 hover:shadow-lg transition reveal">
           <div class="w-12 h-12 bg-orange rounded-xl flex items-center justify-center mb-4">
             <i class="fas fa-envelope text-white"></i>
@@ -438,7 +437,6 @@
           </a>
         </div>
 
-        <!-- Phone -->
         <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 hover:shadow-lg transition reveal">
           <div class="w-12 h-12 bg-orange rounded-xl flex items-center justify-center mb-4">
             <i class="fas fa-phone-alt text-white"></i>
@@ -456,7 +454,6 @@
           </div>
         </div>
 
-        <!-- Address -->
         <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 hover:shadow-lg transition reveal">
           <div class="w-12 h-12 bg-orange rounded-xl flex items-center justify-center mb-4">
             <i class="fas fa-map-marker-alt text-white"></i>
@@ -489,7 +486,7 @@
         <div>
           <span class="font-display font-extrabold text-lg text-white">MINXIN <span class="text-orange">TOYS</span></span>
           <p class="text-sm text-neutral-400 leading-relaxed mt-4 max-w-xs" data-i18n="footer_about">
-            Professional trading company specializing in toys and sports equipment, exporting to Africa and Europe.
+            Professional trading & manufacturing company specializing in toys and sports equipment, exporting to Africa and Europe.
           </p>
         </div>
 
@@ -563,17 +560,11 @@
 
   <!-- ===================== JAVASCRIPT ===================== -->
   <script>
-    // =========================================
-    // PRODUCTS DATA (24 items — 1.jpeg to 24.jpeg, no text)
-    // =========================================
     const products = Array.from({ length: 24 }, (_, i) => ({
       id: i + 1,
       image: `${i + 1}.jpeg`
     }));
 
-    // =========================================
-    // TRANSLATIONS
-    // =========================================
     const i18n = {
       en: {
         nav_home: "Home", nav_about: "About Us", nav_products: "Products", nav_contact: "Contact Us",
@@ -582,7 +573,7 @@
         hero_title_1: "Premium Toys &",
         hero_title_2: "Sports Equipment",
         hero_title_3: "for Global Markets",
-        hero_subtitle: "Professional trading company specializing in toys and sports equipment. Exporting to Africa and Europe. OEM & third-party production available.",
+        hero_subtitle: "Professional trading & manufacturing company specializing in toys and sports equipment. Exporting to Africa and Europe. OEM, custom designs & wholesale available.",
         hero_cta: "Explore Products", hero_cta2: "Contact Us",
         feature_1_title: "Global Export", feature_1_desc: "Africa & Europe",
         feature_2_title: "OEM Production", feature_2_desc: "Third-party manufacturing",
@@ -591,6 +582,8 @@
         about_tag: "ABOUT US",
         about_title: "Professional Toys & Sports Equipment Trading",
         about_text: "Minxin Toys is a professional trading company specializing in toys and sports equipment, as well as commissioning third-party production! Our products are exported to Africa and Europe, and are highly favored by customers. Our professional team serves you and welcomes inquiries!",
+        about_core_title: "Our Core Business",
+        about_core_text: "We manufacture all types of sports toys in-house, as well as through third-party contract manufacturing. We also wholesale our products and trade in all kinds of toys, sports equipment, and recreational goods — serving wholesalers, retailers, and brand owners worldwide.",
         about_oem_title: "OEM & Custom Manufacturing",
         about_oem_text: "We sign formal manufacturing contracts with trusted factories and partner companies to produce toys and sports equipment to your exact specifications. Whether you need custom designs, bespoke product lines, private-label toys, or fully customized orders under your own brand, our team manages the entire process — from design and prototyping to production and quality control — so you receive finished products that match your vision and standards.",
         about_years: "Years Experience",
@@ -616,7 +609,7 @@
         contact_address_line1: "Room 502C, 5/F, Ho King Commercial Centre,",
         contact_address_line2: "2-16 Fa Yuen Street, Mong Kok, Hong Kong",
         contact_map: "View on Map",
-        footer_about: "Professional trading company specializing in toys and sports equipment, exporting to Africa and Europe.",
+        footer_about: "Professional trading & manufacturing company specializing in toys and sports equipment, exporting to Africa and Europe.",
         footer_links: "Quick Links",
         footer_contact: "Contact",
         footer_address: "Room 502C, 5/F, Ho King Commercial Centre, 2-16 Fa Yuen Street, Mong Kok, Hong Kong",
@@ -630,7 +623,7 @@
         hero_title_1: "面向全球市场的",
         hero_title_2: "优质玩具与体育用品",
         hero_title_3: "",
-        hero_subtitle: "专业从事玩具及体育用品贸易的公司。产品远销非洲和欧洲。提供OEM及第三方生产服务。",
+        hero_subtitle: "专业从事玩具及体育用品贸易与制造的公司。产品远销非洲和欧洲。提供OEM、定制设计与批发服务。",
         hero_cta: "浏览产品", hero_cta2: "联系我们",
         feature_1_title: "全球出口", feature_1_desc: "非洲与欧洲",
         feature_2_title: "OEM生产", feature_2_desc: "第三方制造",
@@ -639,6 +632,8 @@
         about_tag: "关于我们",
         about_title: "专业的玩具与体育用品贸易",
         about_text: "銘信玩具是一家專業從事玩具及體育用品貿易以及委託第三方生產的專業貿易公司！我們的產品遠銷非洲和歐洲，深受客戶青睞。我們的專業團隊為您服務，歡迎垂詢！",
+        about_core_title: "我们的核心业务",
+        about_core_text: "我们自行生产各类体育玩具，也通过第三方进行合同制造（代工生产）。同时我们批发产品，并经营各类玩具、体育用品和娱乐用品的贸易——服务全球的批发商、零售商和品牌商。",
         about_oem_title: "OEM 与定制生产",
         about_oem_text: "我们与值得信赖的工厂及合作企业签订正式的代工生产合同，按照您的确切规格生产玩具和体育用品。无论您需要定制设计、专属产品线、贴牌玩具，还是以您自有品牌进行完全定制订单，我们的团队都将全程管理——从设计、打样到生产和质量控制——确保您收到符合愿景与标准的成品。",
         about_years: "年经验",
@@ -664,7 +659,7 @@
         contact_address_line1: "香港旺角花园街2-16号",
         contact_address_line2: "好景商业中心5楼502C室",
         contact_map: "在地图上查看",
-        footer_about: "专业从事玩具及体育用品贸易的公司，产品远销非洲和欧洲。",
+        footer_about: "专业从事玩具及体育用品贸易与制造的公司，产品远销非洲和欧洲。",
         footer_links: "快速链接",
         footer_contact: "联系方式",
         footer_address: "香港旺角花园街2-16号好景商业中心5楼502C室",
@@ -673,24 +668,15 @@
       }
     };
 
-    // =========================================
-    // STATE
-    // =========================================
     let currentLang = 'en';
     let drawerOpen = false;
 
-    // =========================================
-    // INIT
-    // =========================================
     document.addEventListener('DOMContentLoaded', () => {
       setLanguage('en');
       renderProducts();
       setupRevealObserver();
     });
 
-    // =========================================
-    // LANGUAGE
-    // =========================================
     function setLanguage(lang) {
       currentLang = lang;
 
@@ -715,9 +701,6 @@
       document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
     }
 
-    // =========================================
-    // RENDER PRODUCTS (24 images, no text)
-    // =========================================
     function renderProducts() {
       const grid = document.getElementById('product-grid');
       if (!grid) return;
@@ -736,9 +719,6 @@
       `).join('');
     }
 
-    // =========================================
-    // MOBILE DRAWER
-    // =========================================
     function toggleDrawer() {
       drawerOpen = !drawerOpen;
       const drawer = document.getElementById('drawer');
@@ -770,16 +750,10 @@
       if (e.key === 'Escape') closeDrawer();
     });
 
-    // =========================================
-    // SCROLL TO TOP
-    // =========================================
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // =========================================
-    // REVEAL ON SCROLL
-    // =========================================
     function setupRevealObserver() {
       const els = document.querySelectorAll('.reveal');
       if (!('IntersectionObserver' in window)) {
@@ -799,9 +773,6 @@
       });
     }
 
-    // =========================================
-    // SMOOTH ANCHOR SCROLL
-    // =========================================
     document.addEventListener('click', (e) => {
       const anchor = e.target.closest('a[href^="#"]');
       if (!anchor) return;
