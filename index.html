@@ -405,7 +405,7 @@
     </div>
   </section>
 
-  <!-- ===================== CONTACT (with QR card) ===================== -->
+  <!-- ===================== CONTACT (with QR + WeChat) ===================== -->
   <section id="contact" class="bg-white py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -467,17 +467,24 @@
           </a>
         </div>
 
-        <!-- QR Code -->
+        <!-- QR Code + WeChat -->
         <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 hover:shadow-lg transition reveal flex flex-col">
           <div class="w-12 h-12 bg-orange rounded-xl flex items-center justify-center mb-4">
             <i class="fas fa-qrcode text-white"></i>
           </div>
           <h3 class="text-base font-bold text-neutral-900 mb-2" data-i18n="contact_qr_title">Scan to Connect</h3>
-          <p class="text-xs text-neutral-500 mb-4" data-i18n="contact_qr_desc">Scan the QR code to reach us instantly</p>
+          <p class="text-xs text-neutral-500 mb-3" data-i18n="contact_qr_desc">Scan the QR code to reach us instantly</p>
+
+          <!-- WeChat label above the QR image -->
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fab fa-weixin text-green-600 text-xl"></i>
+            <span class="font-display font-extrabold text-neutral-900 text-sm tracking-widest uppercase">WeChat</span>
+          </div>
+
           <div class="bg-white rounded-xl border border-neutral-200 p-2 flex items-center justify-center aspect-square max-w-[180px] w-full mx-auto mt-auto">
             <img
               src="QR.jpeg"
-              alt="QR Code - Minxin Toys"
+              alt="WeChat QR Code - Minxin Toys"
               loading="lazy"
               class="w-full h-full object-contain rounded-lg"
               onerror="this.parentElement.innerHTML='<div class=&quot;flex flex-col items-center justify-center text-neutral-400 text-xs text-center p-4&quot;><i class=&quot;fas fa-qrcode text-3xl mb-2&quot;></i><span>QR.jpeg not found</span></div>';"
