@@ -101,7 +101,7 @@
 </head>
 <body class="bg-neutral-50 text-neutral-900 antialiased">
 
-  <!-- ===================== TOP BAR (Desktop only) ===================== -->
+  <!-- ===================== TOP BAR ===================== -->
   <div class="hidden md:block bg-charcoal text-neutral-300 text-xs border-b border-neutral-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-9">
       <div class="flex items-center gap-6">
@@ -291,7 +291,7 @@
     </div>
   </section>
 
-  <!-- ===================== ABOUT (with Core Business + OEM) ===================== -->
+  <!-- ===================== ABOUT ===================== -->
   <section id="about" class="bg-white py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -321,7 +321,6 @@
             Minxin Toys is a professional trading company specializing in toys and sports equipment, as well as commissioning third-party production! Our products are exported to Africa and Europe, and are highly favored by customers. Our professional team serves you and welcomes inquiries!
           </p>
 
-          <!-- CORE BUSINESS -->
           <div class="bg-neutral-50 border-l-4 border-neutral-900 rounded-r-xl p-4 md:p-5 mb-4">
             <h3 class="font-display font-extrabold text-neutral-900 text-base md:text-lg mb-2 flex items-center gap-2">
               <i class="fas fa-briefcase text-orange"></i>
@@ -332,7 +331,6 @@
             </p>
           </div>
 
-          <!-- OEM & CUSTOM MANUFACTURING -->
           <div class="bg-orange/5 border-l-4 border-orange rounded-r-xl p-4 md:p-5 mb-6">
             <h3 class="font-display font-extrabold text-neutral-900 text-base md:text-lg mb-2 flex items-center gap-2">
               <i class="fas fa-file-signature text-orange"></i>
@@ -385,7 +383,7 @@
     </div>
   </section>
 
-  <!-- ===================== PRODUCTS (24 images, no text) ===================== -->
+  <!-- ===================== PRODUCTS ===================== -->
   <section id="products" class="bg-neutral-50 py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -407,7 +405,7 @@
     </div>
   </section>
 
-  <!-- ===================== CONTACT ===================== -->
+  <!-- ===================== CONTACT (with QR card) ===================== -->
   <section id="contact" class="bg-white py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -423,8 +421,9 @@
         </p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-4 md:gap-5 max-w-6xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 max-w-6xl mx-auto">
 
+        <!-- Email -->
         <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 hover:shadow-lg transition reveal">
           <div class="w-12 h-12 bg-orange rounded-xl flex items-center justify-center mb-4">
             <i class="fas fa-envelope text-white"></i>
@@ -437,6 +436,7 @@
           </a>
         </div>
 
+        <!-- Phone -->
         <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 hover:shadow-lg transition reveal">
           <div class="w-12 h-12 bg-orange rounded-xl flex items-center justify-center mb-4">
             <i class="fas fa-phone-alt text-white"></i>
@@ -454,6 +454,7 @@
           </div>
         </div>
 
+        <!-- Address -->
         <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 hover:shadow-lg transition reveal">
           <div class="w-12 h-12 bg-orange rounded-xl flex items-center justify-center mb-4">
             <i class="fas fa-map-marker-alt text-white"></i>
@@ -465,8 +466,27 @@
             <i class="fas fa-map-marked-alt"></i> <span data-i18n="contact_map">View on Map</span>
           </a>
         </div>
+
+        <!-- QR Code -->
+        <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 hover:shadow-lg transition reveal flex flex-col">
+          <div class="w-12 h-12 bg-orange rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-qrcode text-white"></i>
+          </div>
+          <h3 class="text-base font-bold text-neutral-900 mb-2" data-i18n="contact_qr_title">Scan to Connect</h3>
+          <p class="text-xs text-neutral-500 mb-4" data-i18n="contact_qr_desc">Scan the QR code to reach us instantly</p>
+          <div class="bg-white rounded-xl border border-neutral-200 p-2 flex items-center justify-center aspect-square max-w-[180px] w-full mx-auto mt-auto">
+            <img
+              src="QR.jpeg"
+              alt="QR Code - Minxin Toys"
+              loading="lazy"
+              class="w-full h-full object-contain rounded-lg"
+              onerror="this.parentElement.innerHTML='<div class=&quot;flex flex-col items-center justify-center text-neutral-400 text-xs text-center p-4&quot;><i class=&quot;fas fa-qrcode text-3xl mb-2&quot;></i><span>QR.jpeg not found</span></div>';"
+            />
+          </div>
+        </div>
       </div>
 
+      <!-- Map -->
       <div class="mt-8 max-w-6xl mx-auto rounded-2xl overflow-hidden border border-neutral-200 shadow reveal">
         <iframe
           src="https://www.google.com/maps?q=Ho+King+Commercial+Centre+Mong+Kok+Hong+Kong&output=embed"
@@ -525,7 +545,7 @@
     </div>
   </footer>
 
-  <!-- ===================== FLOATING WHATSAPP (Desktop) ===================== -->
+  <!-- ===================== FLOATING WHATSAPP ===================== -->
   <a href="https://wa.me/8613649571234" target="_blank" rel="noopener"
      class="hidden lg:flex fixed bottom-6 right-6 w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full items-center justify-center shadow-2xl z-30 transition hover:scale-110"
      aria-label="WhatsApp">
@@ -609,6 +629,8 @@
         contact_address_line1: "Room 502C, 5/F, Ho King Commercial Centre,",
         contact_address_line2: "2-16 Fa Yuen Street, Mong Kok, Hong Kong",
         contact_map: "View on Map",
+        contact_qr_title: "Scan to Connect",
+        contact_qr_desc: "Scan the QR code to reach us instantly",
         footer_about: "Professional trading & manufacturing company specializing in toys and sports equipment, exporting to Africa and Europe.",
         footer_links: "Quick Links",
         footer_contact: "Contact",
@@ -659,6 +681,8 @@
         contact_address_line1: "香港旺角花园街2-16号",
         contact_address_line2: "好景商业中心5楼502C室",
         contact_map: "在地图上查看",
+        contact_qr_title: "扫码联系我们",
+        contact_qr_desc: "扫描二维码即刻联系我们",
         footer_about: "专业从事玩具及体育用品贸易与制造的公司，产品远销非洲和欧洲。",
         footer_links: "快速链接",
         footer_contact: "联系方式",
